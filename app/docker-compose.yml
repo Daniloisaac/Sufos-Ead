@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  backend:
+    image: node:16.14-alpine
+    command: npm run dev
+    working_dir: /app-back
+    volumes:
+      - ./backend:/app-back
+      
+    ports: 
+      - "3001:3001"
+    
