@@ -8,5 +8,6 @@ const config = {
     host: process.env.DB_HOST || 'localhost',
     port: Number(process.env.DB_PORT) || 33060,
     dialect: 'mysql',
+    
 };
 module.exports = config;
